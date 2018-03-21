@@ -20,8 +20,6 @@ module.exports=function(){
       var db=mongoose.connect(config.mongodb,{
       poolSize: 10,
       promiseLibrary: global.Promise,
-      keepAlive: 300000, 
-      connectTimeoutMS : 30000 
     });
 
     require('../model/user.js');
