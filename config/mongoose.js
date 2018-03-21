@@ -17,7 +17,10 @@ var options = {
   } 
 };
 module.exports=function(){
+  if(config.mongodb) {
       var db=mongoose.connect(config.mongodb,options);
+  }else {
+}
     require('../model/user.js');
     require('../model/holiday.js');
     require('../model/signin.js');
