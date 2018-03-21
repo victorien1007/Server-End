@@ -10,12 +10,8 @@ var mongoose=require('./config/mongoose.js');
 var db=mongoose();
 
 // view engine setup
-app.use(express.static(path.join(__dirname, 'public')));
-// Set 'views' directory for any views 
-// being rendered res.render()
 app.set('views', path.join(__dirname, 'views'));
-// Set view engine as EJS
-app.engine('html', require('ejs').renderFile);
+app.engine("html",require("ejs").__express);
 app.set('view engine', 'html');
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -60,3 +56,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
