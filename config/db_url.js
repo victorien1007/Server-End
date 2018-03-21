@@ -3,5 +3,5 @@
  */
 module.exports={
 //配置url
-    mongodb:"mongodb://admin:admin@ds157528.mlab.com:57528/todoplay"
+    mongodb:"mongodb://admin:admin@ds213229.mlab.com:13229/signin"
 }
